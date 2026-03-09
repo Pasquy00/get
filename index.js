@@ -12,7 +12,7 @@ console.log(`nome = ${nome} - cognome = ${cognome}`);
 res.status(200).send("Ciao");
 })
 
-app.get("/users/nome/cognome",(req,res) => {
+app.get("/users/:nome/:cognome",(req,res) => {
 const nome = req.params.nome;
 const cognome = req.params.cognome;
 console.log(`nome = ${nome} - cognome = ${cognome}`);
